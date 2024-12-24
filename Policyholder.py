@@ -6,7 +6,7 @@ class Policyholder:
         staff.status = 'active'  # By default, a policyholder is active
         staff.products = []
         staff.payments = []
-        
+
 # Register Policyholder
     def register(staff):
         staff.status = 'active'
@@ -19,30 +19,30 @@ class Policyholder:
         print(f"Policyholder {staff.policyholder_id} updated.")
 
 # Suspend Policy Holder
-    def suspend(staff):
+    def suspend_policyholder(staff):
         staff.status = 'suspended'
         print(f"Policyholder {staff.name} has been suspended.")
 
 # Reativate Policy Holder
-    def reactivate(staff):
+    def reactivate_policyholder(staff):
         staff.status = 'active'
         print(f"Policyholder {staff.name} has been reactivated.")
 
-#Payment Management
+# Display Policyholder Details
+    def display_account_details(staff):
+        print(f"Policyholder: {staff.name}, Status: {staff.status}")
+        print(f"Payments: {[payment.amount for payment in staff.payments]}")
+        print(f"Products: {[product.name for product in staff.products]}")
+
+# Payment Management
     # Payment Processing
     # Add Payment
     def add_payment(staff, payment):
         staff.payments.append(payment)
         print(f"Payment of {payment.amount} has been added to {staff.name}'s account.")
 
-    # Display Account Details
-    def display_account_details(staff):
-        print(f"Policyholder: {staff.name}, Status: {staff.status}")
-        print(f"Payments: {[payment.amount for payment in staff.payments]}")
-        print(f"Products: {[product.name for product in staff.products]}")
-
-    # Product Management
-    # Add Product
+# Product Management
+ # # Add Product
     def add_product(staff, product):
         if product.status == 'active':
             staff.products.append(product)

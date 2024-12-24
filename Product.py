@@ -20,12 +20,12 @@ class Product:
         print(f"Product {staff.product_id} updated.")
 
 
-    # Suspend Product
+    # Suspend / Remove Product
     def remove_product(staff):
         staff.status = 'removed'
         print(f"Product {staff.product_id} has been removed.")
 
     # Reactivate Product
     def reactivate_product(staff):
-        staff.status = 'removed'
-        print(f"Product {staff.product_id} has been removed.")
+        staff.status = 'reactivated'
+        print(f"Product {staff.product_id} has been reactivated.")
