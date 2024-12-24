@@ -6,6 +6,11 @@ class Product:
         staff.price = price
         staff.status = 'active'  # Product is active by default
 
+    # Method to Display Product details
+    def display_account_details(staff):
+        print(f"Product: {staff.name}, Status: {staff.status}")
+        print(f"Price: {staff.price}")
+
     # Method to Create Product
     def create_product(staff):
         staff.status = 'created'
@@ -27,5 +32,5 @@ class Product:
 
     # Reactivate Product
     def reactivate_product(staff):
-        staff.status = 'removed'
-        print(f"Product {staff.product_id} has been removed.")
+        staff.status = 'reactivated'
+        print(f"Product {staff.product_id} has been reactivated.")

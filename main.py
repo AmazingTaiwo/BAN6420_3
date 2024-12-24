@@ -42,11 +42,11 @@ policyholder3.display_account_details()
 
 # Suspend product and policyholder
 product1.remove_product()
-policyholder1.suspend()
+policyholder1.suspend_policyholder()
 
 # Reactivate product and policyholder
 product1.status = 'active'
-policyholder1.reactivate()
+policyholder1.reactivate_policyholder()
 
 # Suspend policyholder
-policyholder2.suspend()
+policyholder2.suspend_policyholder()
