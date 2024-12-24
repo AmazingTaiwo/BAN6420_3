@@ -6,6 +6,12 @@ class Payment:
         staff.product = product
         staff.status = 'processed'  # Payment status can be processed or pending
 
+    # Display Account Details
+    def display_account_details(staff):
+        print(f"Policyholder: {staff.name}, Status: {staff.status}")
+        print(f"Payments: {[payment.amount for payment in staff.payments]}")
+        print(f"Products: {[product.name for product in staff.products]}")
+
     # Method to Process Payment
     def process_payment(staff):
         print(f"Payment of {staff.amount} for {staff.product.name} has been processed for {staff.policyholder.name}.")

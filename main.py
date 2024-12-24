@@ -15,7 +15,7 @@ policyholder1 = Policyholder(401, "Jark Clark")
 policyholder2 = Policyholder(402, "Averi Kumar")
 policyholder3 = Policyholder(403, "Rakesh Olye")
 
-# Register policyholders
+# Register Policyholders
 policyholder1.register()
 policyholder2.register()
 policyholder3.register()
@@ -42,11 +42,11 @@ policyholder3.display_account_details()
 
 # Suspend product and policyholder
 product1.remove_product()
-policyholder1.suspend()
+policyholder1.suspend_policyholder()
 
 # Reactivate product and policyholder
 product1.status = 'active'
-policyholder1.reactivate()
+policyholder1.reactivate_policyholder()
 
 # Suspend policyholder
-policyholder2.suspend()
+policyholder2.suspend_policyholder()
